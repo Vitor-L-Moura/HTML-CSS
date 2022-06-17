@@ -4,6 +4,7 @@ cores: #80A67B
 #F2CCB3
 #A69083
 
+SITE
 
 Curiosidades de Tecnologia
 
