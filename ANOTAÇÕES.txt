@@ -1,0 +1,429 @@
+HTML: HYPERTEXT MARKUP LANGUAGE
+CSS: CASCADING STYLE SHEETS
+
+HTML É FOCADO EM CONTEUDO
+CSS É FOCO EM DESING
+
+LINKS E ANCORAS:
+<a href="aqui dentro coloque a URL"></a> assim vc cria um link numa frase do seu site
+target="_blank" rel="external" use esses dois parametros para abrir o link em uma nova janela e não sobrepor teu site
+
+LINK INTERNO: use o <a href="aqui coloque o nome do arquivo interno"></a> para navegar dentro do seu site
+de parametro pode se usar o rel="next" para proxima pagina e rel="prev" para retorno de pagina
+pode se usar um target="_self" para dizer q vai abrir na proxima pagina(opcional)
+Para fazer retornos de pagina sendo que o arquivo n está na mesma pagina use ../ que quer dizer volte uma pasta
+sendo que ./ significa a propia pasta
+
+LINK PARA ALGUMA MARCA:
+quando não for patrocinado use o:
+use no rel="no follow"
+
+LINKS PARA DOWNLOAD:
+procure sempre pelo midiatype do seu arquivo por exemplo: arquivo pdf usa type"application/pdf"
+use no <a href="onde está o arquivo" download="nome do arquivo" type="o midia type dele"></a>	
+exemplo: <a href="Livro/ebook-gis.rar" download="ebook-gis.rar" type="application/x-rar-compressed">
+
+front end - html css javacrisp  client side
+back end - php javascript(versão q roda(node)) c# rube e java  server side
+
+COMANDOS DE TAG: 
+<hr> - traça uma linha no documento
+&lt; - para mostrar <
+&gt; - para mostrar >
+<!-- --> para comentario em html
+&reg; Simbolo de R 
+&copy; - simbolo de copyright 
+&trade; para TM
+&euro; 
+ &pound;
+ &yen;
+  &cent; 
+  &uparrow; seta pra cima
+
+emogi: &#x e o codigo do emogi na frente sem espaço
+
+FONTES PRA PEGAR IMAGENS - 
+unsplasg
+pexels
+
+FORMATOS PRA IMAGEM  - JPG PNG
+PNG - TRANSPARENTE , MENOS COMPACTADO
+JPG - SEM TRANPARENCIA , MAIS COMPACTADO
+
+1500 de largura no maximo
+
+CARREGAR IMAGENS:
+tag - img
+COPIAR ENDEREÇO DA IMAGEM CONSEGUIMOS TRAZER IMAGEM DE OUTRO SERVIDOR
+
+ICONES DE SITE: FAVICON.CC PARA FAZER TEU ICONE
+use arquivos .ico
+FAVICON.IO para tranformar imagens para icones
+para colocar icone na pagina em htlm use - link:favicon dps so colocar o nome do arquivo no href=""
+Semantica: entra no w3.com para ver tags q n são usadas mais
+
+Hierarquia de tituolos:
+Sempre trabalhe com nivel de titulo h1 h2 h3 etc
+use <p> lorem </p> para ter uma representação
+
+Editando css dentro de tags html:
+dentro de uma tag
+use style=""
+exemplo: <mark style="bakcground-color: blue;></mark>
+
+Comando de tag: <adress></adress> para colocar endereços localizações
+
+COMANDOS:
+
+FORMATAÇÃO DE TEXTO:
+<b></br> usado para por negrito(sem semantica)
+<strong></strong> usado para por em negito(com semantica)
+<i></i> usado para colocar em italico(sem semantica)
+<em></em> usado para colocar em italico/enfase (com semantica)
+<mark></mark> para usar um "marca texto" na frase selecionada
+<small></small> para deixar a letra pequena
+<del></del> marca como um texto desconsiderado(excluido)
+<ins></ins> marca o texto como se ele fosse inserido depois(sublinhado)
+<sup></sup> para deixar o texto sobrescrito , tipo quando vai escrever uma potencia de um numero
+<sub></sub> para deixar o texte subscrito , tipo pra escrever H20 quando o 2 é mais embaixo
+<code></code> para deixar as letrar padronizadas de tamanho
+<pre></pre> para vc utilizar indentação das palavras espaços e quebras de linhas
+<q></q> para colocar aspas , melhor doq usar " normais pois da semantica ao html  - em situações de citação de falas
+<blockquote></blockquote> para citar deslocadamente com mais destaque 
+usando tanbem como parametro a tag cite="" colocando o link de referencia por exemplo do autor de citação
+<abbr></abbr> para falar sobre uma cigla apenas passando o mouse em cima 
+<bdo></bdo> para escrever ao contrario coloque dir="rtl" ai vc escreve a frase de traz pra frente
+
+LISTAS:
+LISTAS ORDENADAS-
+<ol></ol> - vc precisa criar uma tag <li></li> dentro pra adicionar um list item ai ele ordena numericamente os items da lista
+vocè pode editar usando o parametro start="" e colocando um numero dentro pra dizer em q numeração vc quer começar a contagem
+e tbm tem o type="" para definir o tipo de contagem da lista
+
+LISTAS NÃO ORDENADAS-
+<ul></ul> - não ordena apenas coloca pontinhos pra identificar
+tipos de type: disc , circle , square
+
+LISTA DE DEFINIÇÃO-
+<dl></dl> - lista de definição
+<dd></dd> - descrição
+<dt></dt> - termo
+utilize o EX009 para entender melhor
+
+IMAGENS DINAMICAS:
+<picture></picture> dentro dela :
+source:media:type
+trabalhe com max-widht e melhor q min-widht
+  <source media="(max-width: )" srcset="" type="image/">
+max-widht quer dizer - que se seu navegador tiver de largura menor o parametro colocado dentro de max-widht , ele vai carregar a image que
+é definida pelo srcset="" e o type="image/tipo de imagem"/>
+dica: coloque 50px a mais no width , pois é a "folguinha" q tem na barra de rolagem
+
+Reproduzindo audios - 
+<audio src="onde esta o arquivo" controls></audio> - voce cria um display pra tocar o audio
+chrome tem compatibilidade com MP3 WAV OGG
+
+da para fazer com a tag <audio></audio> sem o src dentro da tag , e criar dentro da tag o <source src="onde esta o arquivo" type="o midia type do audio"
+e se vc for fazendo dentro da tag outras tags source com ogg e wav se ele n executar o primeiro ele executa o segundo e etc 
+da pra fazer tbm com um link de download no final pra caso n rodar nenhum ele aparece um arquivo pra baixar
+
+VIDEOS EM HTML:
+use o pexels pra achar videos gratuitos
+Formatos = MP4 M4V WEBM OGV
+HANDBREAK PARA DIMINUIR VIDEOS
+
+use a tag <video src="local do video" controls> </video>
+da para fazer igual o metodo de audio colocando source dentro da tag video , melhor fazer isso sempre pra minimizar erros em outros navegadores
+
+O jeito acima pode custar caro na hora da hospedagem do site , recomendado fazer:
+usando um serviço de hospedagem de video tipo o : youtube / tbm tem o vimeo.com
+clique em compartilhar em um video e clique em incorporar e copie o link html 
+e pronto vc tem um video hospedado no yt porem plataformado no seu site
+
+Cores em css: 
+da pra fazer limitadamente com o nome em ingles da cor
+o codigo hexadecimal como o do branco q é #ffffff e do preto #000000
+a escala hexadecimal funciona assim 1 2 3 4 5 6 7 8 9 A B C D E F 
+
+tmb tem o rgb(red , green , blue) ai tu seta quanto tu quer de cada cor
+
+e tem tbm o HSL:
+Matiz , saturação , illuminosidade. hsl(numero , porcentagem , porcentagem)
+
+Harmonia de cores:
+Circulo cromatico(buscar no google foto pra escolher melhor a paleta de cores): cores primarias - amarelo , vermelho , azul.
+cores secundaria - laranja , violeta , verde
+cores terciarias são misturas da secundaria com primaria
+primeiro o nome da cor primaria depois o nome da cor secundaria:
+amarelo-esverdeado; amarelo-alaranjado ; vermelho-alaranjado ; vermelho arroxeado ; azul-arroxeado ; azul-esverdeado
+
+Degradê em CSS:
+use background-image: linear-gradient(direção do degrade , cor , cor);
+na "direção do degrade" use: to right ; to left ; to top ; to bottom
+pode se fazer em graus , pra por em diagonal etc 
+utilizando: ex: 45deg ou -45deg
+
+o to top precisa de uma confi global 
+
+Config Global de CSS: use *{}
+*{
+	height: 100%;	
+}
+dica:   background-attachment: fixed; para não ficar dando rolagem em baixo do degrade
+se vc quiser fazer um circulo: radial-gradient(circle,cor , cor)
+tanbem consegue manipular quanto de uma cor vc quer tipo ex: linear-gradient(90deg , cor 20% , cor 50%)
+
+dica de css: no inicio da pagina de css coloque: @charset "UTF-8";
+
+Tipografia:
+Anatomia do tipo:
+serifa : é o pezinho no final de letras , o cerebro facilita a leitura com serifa
+ver aula do modulo 2 anatomia do tipo
+
+fontes:
+https://www.w3schools.com/cssref/css_websafe_fonts.asp para saber as safe combinations
+Arial = sem serifa // Arial , helvetica , sans-serif da na mesma
+'Courier new' = com serifa monoespaçada
+Verdana = um pouco maiorzinha
+
+Tamanho de Fontes:
+absolutas: cm , mm , in , px , pt , pc
+relativas:
+em = relativo ao tamanho de uma letra maiuscula da fonte
+ex = relativo ao tamanho de uma letra minisucula da fonte
+rem = relativo a fonte configurada no body
+vw = relativo a largura viewport , tamanho da tela
+vh = altura da viewport
+
+peso da fonte:
+use
+font-weight:   ; bom pra deixar negrito
+pesos literais pra fontes ( do mais fino pro maior)
+lighter normal bold bolder
+varia entre 100 e 900 , 400 é o normal
+text-decoration: underline; para sublinhar o  nome
+
+SHORTHAND: font: style , weight , size , family;
+
+FONTES EXTERNAS: PEGAR FONTEN NO FONTS.GOOGLE.COM
+e copia o @import da fonte
+
+tbm tem o dafont.com pra baixar fontes mais personalizadas
+use @font-face para selecionar
+dentro dele o nome da familia a url do arquivo
+e depois da url na frente coloque format()
+tipos de format:
+opentype(otf)
+truetype(ttf)
+embedded-opentype
+truetype-att(apple advanced typography)
+svg
+
+Use extensão fonts ninja pra pegar uma font de um site
+
+alinhamento de texto: 
+text-align: justify; pra separar na direita e esquerda
+text-ident: 30px; espaçamento de paragrafo
+
+SHORTHAND de border:
+espessura solid color
+
+PSEUDOCLASSES EM CSS:
+. = classe
+# = id
+: = pseudoclasses
+usando : você precisa antes escrever qual elemento ou id q tu quer adicionar o evento
+ex: div:hover{ai dentro tu coloca um background} - toda vez q tu passar o mouse ele vai acionar a cor dentro do :
+
+div > p {oque vai acontecer com o elemento} voce esta dizendo q tem um paragrado dentro da div
+ex: div > p {display:none;} - escondeu o elemento. outro seleteor div:hover > p { display:block;} faz ele aparecer
+
+pseudoclasses:
+elemento:hover {} se  o mouse tiver em cima acontece o que colocou dentro
+elemento:visited {} pra mudar a cor se ja tiver entrado no site (links)
+elemento:active {} pra quando clicar mudar de cor por exemplo
+
+pseudoelementos:
+eles mexem diretamente no conteudo por exemplo criando um paragrafo dinamicamente sem estar na pagina de htlm
+representa com = ::
+elemento::after{} depois do elemento vai gerar o elemento dentro do after
+dentro do after use -  content: 'oque tem dentro'; 
+
+OBS: display:block; quer dizer uma caixa de box-level
+
+Margins:
+Marign: auto; para centralizar uma box
+
+SHORTAHANDS:
+Border: 10px estilo cor
+padding: top , right , bottom , left
+margin: top , right , bottom , left
+outline: top, right , bottom , left
+
+DISPLAYS:
+display: inline; transforma uma box em inline-level
+display: block; transforma uma box em box-level
+
+CAIXA SEMANTICAS:
+Header: para fazer o cabeçalio
+main: conteudo principal
+footer: rodapé
+nav : menu ou um espaço para colocar links etc
+section: uma sessão de espaço para conteudo
+article: um artigo de noticia
+aside: algo periferico
+
+
+SITE PRA PLANEJAR UM SITE: MOCKFLOW
+
+VARIAVEIS EM CSS:
+:root{} serve para declarar as variaveis
+como declarar uma variavel : --nomedavariavel:
+
+RESPONSIVIDADE:
+min-widht de 320px é ideal pois celulares mais antigos usam essa proporção
+css: widht 100%; é importante pra imagem se comportar melhor 
+
+DICA: 
+ transition-duration: 1s; serve para vc dar uma lentidão na execução de um hover por exemplo
+ line-height: 1em; é o espaço entre linhas
+list-style-position: inside; serve para colocar uma lista dentro de um div caso esteja para fora
+columns: 2; para dividir em colunas o seu list , pode ser qualquer numero
+
+TORNANDO UM VIDEO RESPONSIVO:
+Primeiro coloque ele dentro de uma div ,
+nesse div use = position: relative;
+e no iframe dentro da div coloque = position: absolute;
+use na div um padding-bottom: 50%; por exemplo pra defeniar o tamanho da janela do video
+e no iframe vc pode usar:
+top: 5%; para definir o espaçamento do topo da div e do iframe ( utilize em % para ficar responsivo)
+left 5%; para definir o espaçamento da lateral da div e do iframe ( utilize em % para ficar responsivo)
+vc pode usar tanbem
+width 90%; vc meche na largura do video em proporção do tamanho da div
+height: 90%; vc meche na altura do video em proporção do tamanho da div
+
+GITHUB:
+EXISTE GIT E GITHUB SAO DIFERENTES
+EXISTE REPOSITORIOS LOCAIS/REMOTOS
+
+GIT PARA FAZER O VERSIONAMENTO DE PROJETOS
+GITHUB UM BACKUP NA NUVEM
+
+REPOSITORIOS :
+create a new repository you hard drive :: para criar um repositorio local
+Publicando um repositorio local:
+clique em publish repository
+marque a caixa keep this code private para privar seu codigo para pessoas n verem
+se desmarcar as pessoas poderão ver seus codigos
+apos publicar vc terá ele em seu site no github
+
+TODA ATUALIZAÇÃO Q TU FIZER NOS ARQUIVOS DE REPOSITORIOS , ELES FICARAM MARCADOS COM A LETRA M
+se tu quiser salvar no repositorio e so vc dar um titulo e apertar em commit e dps pode atualizar no github.com
+
+Hospedando gratuitamente:
+vai no repositorio e clica em settings
+vai em paginas(pages) e selecione um tema , apos isso
+coloque pasta main e root , e pronto estara hospedado
+
+PARA CRIAR UM QR CODE PARA SEU SITE ACESSE
+www.qr-code-generator.com
+
+Repeat no Background image:
+background: no-repeat; nao vai repetir a imagem
+: repeat-x; vai repetir so na lateral e o y para baixo
+
+Posicionamento das imagens em bk:
+o padrão é background-position: left top;
+mas vc pode usar backgroudn position para outras definições
+por ex: background-position: center; ela vai aparecer no meio de sua div 
+
+mais exemplos: right top = vai ter como ponto de referencia em cima na parte direita
+center top = no meio em cima 
+center bottom = no meio em baixo e etc
+
+TAMANHO DO BACKGROUND IMAGE:
+background-size: -- ;
+ vc pode trabalhar com 100%
+existe tanbem:
+contain = faz com que a imagem seja 100% exibida n importa o tamanho 
+cover = cobrir a tela inteira mesmo q precise picotar a imagem dinamicamente
+se ficar bugado vc pode usar o no body o height de 98vh para cobrir a tela inteira
+
+BACKGROUDN ATTACHMENTE : FIXAÇÃO DE BK
+background-attachmente : fixed; vai fixar o bk e ele n vai fazer rolagem pra baixo nem pra cima
+usando com o cover da um resultado mt legal e 98vw o height do body
+
+shorthand:  color > image > position > repeat > size > attachmente]
+
+CENTRALIZAÇÃO VERTICAL
+
+o container precisa de um position relative 
+e o conteudo precisa de um position absolute (absolute no q vai ser centralizado)
+tendo o absolute declarado vc tem:
+left:
+top: 
+bottom:
+right:        que vc pode usar pra centralizar da maneira q vc quiser o box dentro do container
+
+use transform
+transform: translate(10px , 10px); valores positivos respectivamente direita e baixo 
+(-10px , -10px) respectivamente esquerda e cima
+
+então para centraliar vertical use: relative no container e absloute no conteudo apos isso use left: 50% e top: 50%
+logo depois aplique transform trasnlate (-50% , -50%) e vai centralizar perfeitamente
+
+DICA: 
+para formatar um titulo mais bonito use
+font-variant: small-caps; para por as primeiras maiusculas e o formato mais robusto das letras
+line-height: 1em; serve para dar espaçamento entre linhas
+
+PARALLAXE:
+background-attachment: fixed; é perfeito para isso pois ele fixa a imagem , então vc rola a tela mais ele não rola junto ele fica estatico
+
+TABELAS:
+use tag <table> delimita a sua tabela
+hierarquia:
+table
+table row = linha de tabela ( tag <tr> )
+table header = cabeçalho de tabela 
+table data = dado de tabela ( tag <td> )
+
+com o table row delimita uma linha , e os <td> que voce colocar dentro do <tr> sao as colunas da primeira linha
+voce pode usar border-collapse: collapse; para tirar a separação das linhas e bordas em uma tabela
+
+vertical align: top; ou bottom pra alinhar verticalmente dentro de uma <td>
+
+Anatomia de tabelas grandes:
+table: hierarquia
+
+<caption> ele serve como uma introdução da tabela
+
+THEAD{
+TR TD TH}
+
+TBODY{
+TR TD TH}
+
+TFOOT{
+TR TD TH}
+
+SCOPO DE TABELAS:
+para voce dar mais semantica a tabelas com os TH , use a dentro do th o "scope=col"
+col é para dizer q os dados desse titulo estão na coluna dele 
+e o row para dizer q esta na linha dele
+
+tbm tem o colgroup e o rowgroup , q é quando tem mais dados sobre aquele TH que sobrepoe mais de uma linha ou coluna
+
+EFEITO ZEBRADO EM TABELAS:
+use uma pseudo classe nos seus elementos de tr
+a pseudoclasse = :nth-child(2) o numero do parenteses é o tanto de cada em cada linha q vc vai colorir
+vc pode usar no parentes o "odd" q é toda linha impar ou "even" q é par
+
+fixar cabeçario(SO FUNCIONA NO GOOGLE CHROME)
+use position relative na div ou tabela , 
+e coloque position sticky no dado q estive dentro q vc queira q se mantenha fixo
+ai tu coloca top:-1px é ele vai fixar no topo da tela)
+
+MESCLAGEM DE CELULAS:
+para fazer um td ocupar duas colunas , vc usa dentro dele o comando colspan="2" ele vai ocupar 2 colunas e assim por diante
+e se vc quise q ele ocupe linhas use o rowspan="2" (vai ocupar 2 linhas e assim por diante)
