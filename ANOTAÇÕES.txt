@@ -427,3 +427,11 @@ ai tu coloca top:-1px é ele vai fixar no topo da tela)
 MESCLAGEM DE CELULAS:
 para fazer um td ocupar duas colunas , vc usa dentro dele o comando colspan="2" ele vai ocupar 2 colunas e assim por diante
 e se vc quise q ele ocupe linhas use o rowspan="2" (vai ocupar 2 linhas e assim por diante)
+
+OVERFLOW PARA TABELAS EM TELAS PEQUENAS:
+serve para vc criar uma rolagem dentro apenas do elemento da tabela pra nao inteferir no site
+precisa-se envelopar a table em uma div pra funcionar
+pode se usar:
+overflow-x: ; para rolagem horizontal
+overflow-y: ; para rolagem vertical 
+ex: overflow-x: auto;
