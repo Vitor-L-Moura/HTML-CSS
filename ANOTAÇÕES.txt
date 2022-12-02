@@ -435,3 +435,12 @@ pode se usar:
 overflow-x: ; para rolagem horizontal
 overflow-y: ; para rolagem vertical 
 ex: overflow-x: auto;
+
+IFRAME:
+iframe quer dizer caixa em linha
+no iframe vc pode colocar um link de site e o site vai carregar dentro da caixa do iframe
+
+criando um iframe padrão o frameborder=0 , vai tirar a borde do iframe
+e o src  vc coloca o link de um site por exemplo
+
+tem sites que tem proteção contra iframe
