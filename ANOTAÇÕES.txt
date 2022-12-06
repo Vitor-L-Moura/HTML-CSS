@@ -444,3 +444,7 @@ criando um iframe padrão o frameborder=0 , vai tirar a borde do iframe
 e o src  vc coloca o link de um site por exemplo
 
 tem sites que tem proteção contra iframe
+
+dentro da tag do iframe , oq vc coloca so aparece caso o dispositivo nao tiver compatibilidade
+existe um parametro pra tag iframe , q é o scolling="" dentor dele vc tem yes ou no.
+yes vai deixar rolagem e o no não vai deixar rolar 
